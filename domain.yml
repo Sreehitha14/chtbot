@@ -1,0 +1,33 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - answer
+  - mood
+  - restaurant_time
+  - show_menu
+
+responses:
+  utter_greet:
+  - text: "Hey! I am Restaurant Bot/"
+
+  utter_show_menu:
+  - text: "Here is our menu:"
+    image: "https://i.pinimg.com/originals/c8/d0/28/c8d02843150633645e3bec967a44766c.jpg"
+
+  utter_goodbye:
+  - text: "Ping me if you have any queries, Bye!"
+
+  utter_mood:
+  - text: "How can I help you?"
+
+  utter_answer:
+  - text: "Our pleasure:)"
+
+  utter_restaurant_time:
+  - text: "We are open from 9am to 5pm."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,18 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood
+  - action: utter_mood
+  - intent: show_menu
+  - action: utter_show_menu
+  - intent: restaurant_time
+  - action: utter_restaurant_time
+  - intent: answer
+  - action: utter_answer
+  - intent: goodbye
+  - action: utter_goodbye
